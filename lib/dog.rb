@@ -16,7 +16,7 @@ class Dog
   end
 
   def self.print_all
-    puts (Dog.class_variable_get(:@@all)).split("\n")
+    @@all.each {|pup| puts pup."#{name}\n"}
   end
 
   def self.clear_all
