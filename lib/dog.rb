@@ -16,7 +16,7 @@ class Dog
   end
 
   def self.print_all
-    @@all.each {|pup| puts (Dog.instance_variable_get(:name))}
+    @@all.each {|pup| puts (Dog.instance_variable_get(pup))}
   end
 
   def self.clear_all
