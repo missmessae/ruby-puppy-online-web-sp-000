@@ -18,5 +18,6 @@ class Dog
   def self.print_all
     @@all.each {|pup| puts "#{@name}\n"
   end
+end
 
 end
