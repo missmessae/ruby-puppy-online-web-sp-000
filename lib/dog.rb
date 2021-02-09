@@ -19,8 +19,8 @@ class Dog
     @@all.each {|pup| puts "#{@name}\n"}
   end
 
-  def self.clear_all(array)
-    array.clear
+  def self.clear_all
+    @@all.clear
   end
 
 end
