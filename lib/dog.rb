@@ -16,7 +16,7 @@ class Dog
   end
 
   def self.print_all
-    puts (Dog.instance_variable_get(:@@all)).to match(@name)
+    puts (Dog.class_variable_get(:@@all)).to match(@name)
   end
 
   def self.clear_all
