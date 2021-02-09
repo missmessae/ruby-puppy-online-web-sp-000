@@ -16,7 +16,7 @@ class Dog
   end
 
   def self.print_all
-    @@all.each {|pup| puts "#{@name}\n"}
+    @@all.each {|pup| puts "#{}\n"}   # expect(Dog.instance_variable_get()@all)).to match([])
   end
 
   def self.clear_all
